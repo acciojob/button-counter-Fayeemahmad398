@@ -1,13 +1,20 @@
-
 import React from "react";
-import './../styles/App.css';
+import "./../styles/App.css";
+import useState from "react";
 
 const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
-}
+  const [count, setCount] = useState(0);
 
-export default App
+  function increaseCount() {
+    setCount(count + 1);
+  }
+
+  return (<div>{/* Do not remove the main div */}
+  <p>Button clicked {count} times.</p>
+  <button onClick={increaseCount}>click me</button>
+  
+  
+  </div>);
+};
+
+export default App;
