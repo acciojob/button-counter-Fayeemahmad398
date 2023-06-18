@@ -17,4 +17,4 @@ const App = () => {
   </div>);
 };
 
-export default App;
+expo App;
